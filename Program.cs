@@ -2,10 +2,11 @@
 {
     class Program
     {
-        static void SayHello() => Console.WriteLine("Hello");
+        //static void SayHello() => Console.WriteLine("Hello");
+        static void Game() => Console.WriteLine("Limbus Company");
         static void Main()
         {
-            SayHello();
+            Game();
         }
     }
 }
