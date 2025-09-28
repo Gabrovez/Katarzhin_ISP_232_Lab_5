@@ -11,14 +11,14 @@
 
         static void Main()
         {
-            void print(string message)
-            {
-                Console.WriteLine(message);
-            }
-            Console.WriteLine("Как тебя зовут?");
-            Console.Write("Введите своё имя: ");
-            string? name2 = Console.ReadLine();
-            print(message: $"Твоё имя: {name2}");
+            //void print(string message)
+            //{
+            //    Console.WriteLine(message);
+            //}
+            //Console.WriteLine("Как тебя зовут?");
+            //Console.Write("Введите своё имя: ");
+            //string? name2 = Console.ReadLine();
+            //print(message: $"Твоё имя: {name2}");
             //Game();
             //Console.WriteLine("Введите своё имя: ");
             //string? name = Console.ReadLine();
@@ -35,6 +35,17 @@
             //    case "немецкий": SayHelloDe(); break;
             //    default: Console.WriteLine("Язык не найден!"); break;
             //}
+            void Sum(int x, int y)
+            {
+                int res = x + y;
+                Console.WriteLine($"{x} + {y} = {res}");
+            }
+            Sum(10, 20);
+            Console.Write("Введите переменную x: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите переменную y: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Sum(x, y);
         }
     }
 }
