@@ -51,14 +51,34 @@
             //    Console.WriteLine($"Имя: {pname}, возраст: {age}");
             //}
             //printPerson("Соня", 22);
-            void Person(string name, int age = 18, string vuz = "BФ BолГУ") =>
-                Console.WriteLine($"Имя: {name} \nВозраст: {age} \nВуз: {vuz}");
-            Person( "Александр");
-            Person( "Иван", 30);
-            Person( "Дмитрий", 20, "МГУ");
-            Person(age: 30, name: "Иван");
-            Person(vuz: "МГУ", age: 20, name: "Дмитрий");
-
+            //void Person(string name, int age = 18, string vuz = "BФ BолГУ") =>
+            //    Console.WriteLine($"Имя: {name} \nВозраст: {age} \nВуз: {vuz}");
+            //Person( "Александр");
+            //Person( "Иван", 30);
+            //Person( "Дмитрий", 20, "МГУ");
+            //Person(age: 30, name: "Иван");
+            //Person(vuz: "МГУ", age: 20, name: "Дмитрий");
+            string getMessage()
+            {
+                return "Hello";
+            }
+            Console.WriteLine(getMessage());
+            int Sum(int a, int b)
+            {
+                return a + b;
+            }
+            Console.WriteLine(Sum(10, 20));
+            int number = Convert.ToInt32(Console.ReadLine());
+            void CheckValue(int number)
+            {
+                if (number < 0)
+                {
+                    Console.WriteLine("Отрицательное число");
+                    return;
+                }
+                Console.WriteLine("Положительное число");
+            }
+            CheckValue(number);
         }
     }
 }
