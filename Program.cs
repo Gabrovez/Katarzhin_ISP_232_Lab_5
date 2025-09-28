@@ -46,11 +46,19 @@
             //Console.Write("Введите переменную y: ");
             //int y = Convert.ToInt32(Console.ReadLine());
             //Sum(x, y);
-            void printPerson(string pname, int age)
-            {
-                Console.WriteLine($"Имя: {pname}, возраст: {age}");
-            }
-            printPerson("Соня", 22);
+            //void printPerson(string pname, int age)
+            //{
+            //    Console.WriteLine($"Имя: {pname}, возраст: {age}");
+            //}
+            //printPerson("Соня", 22);
+            void Person(string name, int age = 18, string vuz = "BФ BолГУ") =>
+                Console.WriteLine($"Имя: {name} \nВозраст: {age} \nВуз: {vuz}");
+            Person( "Александр");
+            Person( "Иван", 30);
+            Person( "Дмитрий", 20, "МГУ");
+            Person(age: 30, name: "Иван");
+            Person(vuz: "МГУ", age: 20, name: "Дмитрий");
+
         }
     }
 }
