@@ -58,27 +58,36 @@
             //Person( "Дмитрий", 20, "МГУ");
             //Person(age: 30, name: "Иван");
             //Person(vuz: "МГУ", age: 20, name: "Дмитрий");
-            string getMessage()
+            //string getMessage()
+            //{
+            //    return "Hello";
+            //}
+            //Console.WriteLine(getMessage());
+            //int Sum(int a, int b)
+            //{
+            //    return a + b;
+            //}
+            //Console.WriteLine(Sum(10, 20));
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //void CheckValue(int number)
+            //{
+            //    if (number < 0)
+            //    {
+            //        Console.WriteLine("Отрицательное число");
+            //        return;
+            //    }
+            //    Console.WriteLine("Положительное число");
+            //}
+            //CheckValue(number);
+            string GetMessage() => "Hello";
+            string mes = GetMessage();
+            Console.WriteLine(mes);
+            void PrintMessage(string message)
             {
-                return "Hello";
+                Console.WriteLine(message);
             }
-            Console.WriteLine(getMessage());
-            int Sum(int a, int b)
-            {
-                return a + b;
-            }
-            Console.WriteLine(Sum(10, 20));
-            int number = Convert.ToInt32(Console.ReadLine());
-            void CheckValue(int number)
-            {
-                if (number < 0)
-                {
-                    Console.WriteLine("Отрицательное число");
-                    return;
-                }
-                Console.WriteLine("Положительное число");
-            }
-            CheckValue(number);
+            PrintMessage(GetMessage());
+
         }
     }
 }
