@@ -79,14 +79,25 @@
             //    Console.WriteLine("Положительное число");
             //}
             //CheckValue(number);
-            string GetMessage() => "Hello";
-            string mes = GetMessage();
-            Console.WriteLine(mes);
-            void PrintMessage(string message)
+            //string GetMessage() => "Hello";
+            //string mes = GetMessage();
+            //Console.WriteLine(mes);
+            //void PrintMessage(string message)
+            //{
+            //    Console.WriteLine(message);
+            //}
+            //PrintMessage(GetMessage());
+            void PrintPerson(string name, int age)
             {
-                Console.WriteLine(message);
+                if (age > 2000 || age < 1)
+                {
+                    Console.WriteLine("Недопустимый возраст");
+                    return;
+                }
+                Console.WriteLine($"Имя: {name} Возраст: {age}");
             }
-            PrintMessage(GetMessage());
+            PrintPerson(name: "Алексей", age: 32);
+            PrintPerson(name: "Dunkan", age: 12345);
 
         }
     }
