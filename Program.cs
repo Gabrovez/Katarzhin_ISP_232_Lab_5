@@ -87,18 +87,22 @@
             //    Console.WriteLine(message);
             //}
             //PrintMessage(GetMessage());
-            void PrintPerson(string name, int age)
-            {
-                if (age > 2000 || age < 1)
-                {
-                    Console.WriteLine("Недопустимый возраст");
-                    return;
-                }
-                Console.WriteLine($"Имя: {name} Возраст: {age}");
-            }
-            PrintPerson(name: "Алексей", age: 32);
-            PrintPerson(name: "Dunkan", age: 12345);
-
+            //void PrintPerson(string name, int age)
+            //{
+            //    if (age > 2000 || age < 1)
+            //    {
+            //        Console.WriteLine("Недопустимый возраст");
+            //        return;
+            //    }
+            //    Console.WriteLine($"Имя: {name} Возраст: {age}");
+            //}
+            //PrintPerson(name: "Алексей", age: 32);
+            //PrintPerson(name: "Dunkan", age: 12345);
+            Random random = new Random();
+            int numb = random.Next(0, 100);
+            Console.WriteLine($"Случайное число: {numb}");
+            double randomDouble = random.NextDouble();
+            Console.WriteLine($"Случайное число: {randomDouble}");
         }
     }
 }
