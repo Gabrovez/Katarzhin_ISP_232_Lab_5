@@ -206,21 +206,31 @@
             //double celsius = 11;
             //Console.WriteLine(ConvertCelsiusToFahrenheit(celsius));
             //Task 7
-            int CountVowels(string text){
-                int count = 0;
-                string vowels = "aeiouAEIOU";
-                foreach (char c in text)
-                {
-                    if (vowels.Contains(c))
-                    {
-                        count++;
-                    }
-                }
-                return count;
+            //int CountVowels(string text){
+            //    int count = 0;
+            //    string vowels = "aeiouAEIOU";
+            //    foreach (char c in text)
+            //    {
+            //        if (vowels.Contains(c))
+            //        {
+            //            count++;
+            //        }
+            //    }
+            //    return count;
+            //}
+            //string text = ("Hello World!");
+            //int vowelCount = CountVowels(text);
+            //Console.WriteLine($"Кoл-вo гласных: {vowelCount}");
+            //Task 8
+            string GeneratePassword(int length){
+                string chars = "0123456789abcdefghijklamopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                Random random = new Random();
+                char[] password = new char[length];
+                for (int i = 0; i < length; i++)
+                    password[i] = chars[random.Next(chars.Length)];
+                return new string(password);
             }
-            string text = ("Hello World!");
-            int vowelCount = CountVowels(text);
-            Console.WriteLine($"Кoл-вo гласных: {vowelCount}");
+            Console.WriteLine($"Пароль: {GeneratePassword(22)}");
 
 
 
