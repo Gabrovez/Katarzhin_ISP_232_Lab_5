@@ -147,21 +147,29 @@
             //int[] numbers1 = [1, 2, 3];
             //int[] numbers2 = [3, 4, 5, 6, 7];
             //Compare(numbers1, numbers2);
-            int Sum(int[] numbers){
-                int limit = 0;
-                int result = 0;
-                static bool IsPassed(int number, int lim){
-                    return number > lim;
-                }
-                foreach (int number in numbers) {
-                    if (IsPassed(number, limit)) result += number;
-                }
-                return result;
-            }
-            int[] numbers1 = [-3, -2, -1, 0, 1, 2, 3];
-            int[] numbers2 = [3, -4, 5, -6, 7];
-            Console.WriteLine(Sum(numbers1));
-            Console.WriteLine(Sum(numbers2));
+            //int Sum(int[] numbers){
+            //    int limit = 0;
+            //    int result = 0;
+            //    static bool IsPassed(int number, int lim){
+            //        return number > lim;
+            //    }
+            //    foreach (int number in numbers) {
+            //        if (IsPassed(number, limit)) result += number;
+            //    }
+            //    return result;
+            //}
+            //int[] numbers1 = [-3, -2, -1, 0, 1, 2, 3];
+            //int[] numbers2 = [3, -4, 5, -6, 7];
+            //Console.WriteLine(Sum(numbers1));
+            //Console.WriteLine(Sum(numbers2));
+            // Задание 1
+            /*
+              1. Ничего
+              2. void ShowWelcomeMassege
+              3. Метод вызовет ошибку компиляции
+              4. void PrintNumber(int number)
+              5. PrintMessage('Hello, World!') Я предпологаю что тут должны были быть 2-ные кавычки, так что этот*/
+
 
         }
     }
