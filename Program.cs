@@ -251,7 +251,7 @@
             //int[] reversed = ReverseArray(numbers);
             //Console.WriteLine(string.Join(", ", reversed));
             //Task 11
-            while (true){
+            /*while (true){
                 Console.WriteLine("=== КАЛЬКУЛЯТОР ===");
                 Console.WriteLine("1. Сложение");
                 Console.WriteLine("2. Вычитание");
@@ -326,7 +326,19 @@
                     Console.Write(prom);
                     return Convert.ToDouble(Console.ReadLine());
                 }
+            }*/
+            //Task 12
+            bool isPrime(int n){
+                if (n < 2) return false;
+                for (int i = 2; i <= Math.Sqrt(n); i++)
+                    if (n % i == 0) return false;
+                return true;
             }
+            void PrintPrimesUpTo(int n){
+                for (int i = 2; i <= n; i++)
+                    if (isPrime(i)) Console.WriteLine($"{i}");
+            }
+            PrintPrimesUpTo(11);
 
         }
     }
