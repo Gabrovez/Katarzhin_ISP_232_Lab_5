@@ -103,18 +103,30 @@
             //Console.WriteLine($"Случайное число: {numb}");
             //double randomDouble = random.NextDouble();
             //Console.WriteLine($"Случайное число: {randomDouble}");
-            void ShowWelcomeMessage() => Console.WriteLine("Добро пожаловать в консольный прогноз погоды!");
-            void ShowGoodbyeMessage() => Console.WriteLine("Спасибо за использование нашего прогноза! Хорошего дня!");
-            string getWeather()
+            //void ShowWelcomeMessage() => Console.WriteLine("Добро пожаловать в консольный прогноз погоды!");
+            //void ShowGoodbyeMessage() => Console.WriteLine("Спасибо за использование нашего прогноза! Хорошего дня!");
+            //string getWeather()
+            //{
+            //    string[] weathers = { "Солнечно", "Облачно", "Дождь", "Снег", "Гроза" };
+            //    Random random = new Random();
+            //    int index = random.Next(weathers.Length);
+            //    return weathers[index];
+            //}
+            //ShowWelcomeMessage();
+            //Console.WriteLine($"Погода на сегодня: {getWeather()}");
+            //ShowGoodbyeMessage();
+            int Factorial(int n)
             {
-                string[] weathers = { "Солнечно", "Облачно", "Дождь", "Снег", "Гроза" };
-                Random random = new Random();
-                int index = random.Next(weathers.Length);
-                return weathers[index];
+                if (n == 1) return 1;
+                return n * Factorial(n - 1);
             }
-            ShowWelcomeMessage();
-            Console.WriteLine($"Погода на сегодня: {getWeather()}");
-            ShowGoodbyeMessage();
+            int factorial = Factorial(n: 4);
+            int factorial2 = Factorial(n: 5);
+            int factorial3 = Factorial(n: 6);
+            Console.WriteLine($"Факториал числа 4 = {factorial}");
+            Console.WriteLine($"Факториал числа 5 = {factorial2}");
+            Console.WriteLine($"Факториал числа 6 = {factorial3}");
+
         }
     }
 }
