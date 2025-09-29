@@ -200,11 +200,27 @@
             //int[] m = { 1111, 2231, 333, 234, 555, 236, 777 };
             //Console.WriteLine(findMax(m));
             //Task 6 
-            double ConvertCelsiusToFahrenheit(double celsius) {
-                return celsius * 9 / 5 + 32;
+            //double ConvertCelsiusToFahrenheit(double celsius) {
+            //    return celsius * 9 / 5 + 32;
+            //}
+            //double celsius = 11;
+            //Console.WriteLine(ConvertCelsiusToFahrenheit(celsius));
+            //Task 7
+            int CountVowels(string text){
+                int count = 0;
+                string vowels = "aeiouAEIOU";
+                foreach (char c in text)
+                {
+                    if (vowels.Contains(c))
+                    {
+                        count++;
+                    }
+                }
+                return count;
             }
-            double celsius = 11;
-            Console.WriteLine(ConvertCelsiusToFahrenheit(celsius));
+            string text = ("Hello World!");
+            int vowelCount = CountVowels(text);
+            Console.WriteLine($"Кoл-вo гласных: {vowelCount}");
 
 
 
