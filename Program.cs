@@ -175,11 +175,15 @@
             //}
             //GreetUser("Антон");
             //Задание 3
-            int AddNumbers(int a, int b) {
-                return a + b;
+            //int AddNumbers(int a, int b) {
+            //    return a + b;
+            //}
+            //Console.WriteLine(AddNumbers(5, 8));
+            //Задание 4
+            bool isEven(int n){
+                return n % 2 == 0;
             }
-            Console.WriteLine(AddNumbers(5, 8));
-
+            Console.WriteLine(isEven(11));
 
         }
     }
