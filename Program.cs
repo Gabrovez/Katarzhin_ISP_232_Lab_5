@@ -186,19 +186,26 @@
             //Console.WriteLine(isEven(11));
             //Заданиме 5
             //Task 5
-            int findMax(int[] m)
-            {
-                int max = 0;
-                for (int i = 0; i < m.Length; i++)
-                {
-                    if (m[i] > max)
-                        max = m[i];
-                }
-                return max;
-            }
+            //int findMax(int[] m)
+            //{
+            //    int max = 0;
+            //    for (int i = 0; i < m.Length; i++)
+            //    {
+            //        if (m[i] > max)
+            //            max = m[i];
+            //    }
+            //    return max;
+            //}
 
-            int[] m = { 1111, 2231, 333, 234, 555, 236, 777 };
-            Console.WriteLine(findMax(m));
+            //int[] m = { 1111, 2231, 333, 234, 555, 236, 777 };
+            //Console.WriteLine(findMax(m));
+            //Task 6 
+            double ConvertCelsiusToFahrenheit(double celsius) {
+                return celsius * 9 / 5 + 32;
+            }
+            double celsius = 11;
+            Console.WriteLine(ConvertCelsiusToFahrenheit(celsius));
+
 
 
         }
