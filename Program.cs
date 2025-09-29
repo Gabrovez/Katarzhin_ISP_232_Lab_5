@@ -232,15 +232,24 @@
             //}
             //Console.WriteLine($"Пароль: {GeneratePassword(22)}");
             // Task 9
-            bool IsPalindrome(string word){
-                for (int i = 0; i < word.Length; i++){
-                    if (word[i] != word[word.Length - 1 - i])
-                        return false;
-                }
-                return true;
+            //bool IsPalindrome(string word){
+            //    for (int i = 0; i < word.Length; i++){
+            //        if (word[i] != word[word.Length - 1 - i])
+            //            return false;
+            //    }
+            //    return true;
+            //}
+            //Console.WriteLine(IsPalindrome("абоба"));
+            //Task 10
+            int[] ReverseArray(int[] array){
+                int[] reversed = new int[array.Length];
+                for (int i = 0; i < array.Length; i++)
+                    reversed[i] = array[array.Length - 1 - i];
+                return reversed;
             }
-            Console.WriteLine(IsPalindrome("абоба"));
-
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int[] reversed = ReverseArray(numbers);
+            Console.WriteLine(string.Join(", ", reversed));
 
 
         }
