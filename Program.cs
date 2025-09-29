@@ -169,6 +169,11 @@
               3. Метод вызовет ошибку компиляции
               4. void PrintNumber(int number)
               5. PrintMessage('Hello, World!') Я предпологаю что тут должны были быть 2-ные кавычки, так что этот*/
+            // Задание 2
+            void GreetUser(string name){
+                Console.WriteLine($"Привет, {name}! Добро пожаловать в программу");
+            }
+            GreetUser("Антон");
 
 
         }
