@@ -170,10 +170,15 @@
               4. void PrintNumber(int number)
               5. PrintMessage('Hello, World!') Я предпологаю что тут должны были быть 2-ные кавычки, так что этот*/
             // Задание 2
-            void GreetUser(string name){
-                Console.WriteLine($"Привет, {name}! Добро пожаловать в программу");
+            //void GreetUser(string name){
+            //    Console.WriteLine($"Привет, {name}! Добро пожаловать в программу");
+            //}
+            //GreetUser("Антон");
+            //Задание 3
+            int AddNumbers(int a, int b) {
+                return a + b;
             }
-            GreetUser("Антон");
+            Console.WriteLine(AddNumbers(5, 8));
 
 
         }
