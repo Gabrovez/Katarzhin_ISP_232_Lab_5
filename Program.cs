@@ -150,11 +150,11 @@
             int Sum(int[] numbers){
                 int limit = 0;
                 int result = 0;
-                bool IsPassed(int number){
-                    return number > limit;
+                static bool IsPassed(int number, int lim){
+                    return number > lim;
                 }
                 foreach (int number in numbers) {
-                    if (IsPassed(number)) result += number;
+                    if (IsPassed(number, limit)) result += number;
                 }
                 return result;
             }
