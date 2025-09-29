@@ -241,16 +241,92 @@
             //}
             //Console.WriteLine(IsPalindrome("абоба"));
             //Task 10
-            int[] ReverseArray(int[] array){
-                int[] reversed = new int[array.Length];
-                for (int i = 0; i < array.Length; i++)
-                    reversed[i] = array[array.Length - 1 - i];
-                return reversed;
+            //int[] ReverseArray(int[] array){
+            //    int[] reversed = new int[array.Length];
+            //    for (int i = 0; i < array.Length; i++)
+            //        reversed[i] = array[array.Length - 1 - i];
+            //    return reversed;
+            //}
+            //int[] numbers = { 1, 2, 3, 4, 5 };
+            //int[] reversed = ReverseArray(numbers);
+            //Console.WriteLine(string.Join(", ", reversed));
+            //Task 11
+            while (true){
+                Console.WriteLine("=== КАЛЬКУЛЯТОР ===");
+                Console.WriteLine("1. Сложение");
+                Console.WriteLine("2. Вычитание");
+                Console.WriteLine("3. Умножение");
+                Console.WriteLine("4. Деление");
+                Console.WriteLine("0. Выход");
+                Console.Write("Выберите операцию: ");
+                string choice = Console.ReadLine();
+                if (choice == "0"){
+                    Console.WriteLine("Удачи Вам!");
+                    break;
+                }
+                if (choice == "1" || choice == "2" || choice == "3" || choice == "4"){
+                    switch (choice){
+                        case "1":
+                            Addition();
+                            break;
+                        case "2":
+                            Subtraction();
+                            break;
+                        case "3":
+                            Multiplication();
+                            break;
+                        case "4":
+                            Division();
+                            break;
+                        case "0":
+                            Console.WriteLine("Выход из программы...");
+                            return;
+                        default:
+                            Console.WriteLine("Неверный выбор! Попробуйте снова.");
+                            break;
+                    }
+                }
+                else{
+                    Console.WriteLine("Неверный выбор! Попробуйте снова.");
+                }
+                static void Addition(){
+                    Console.WriteLine("\n--- СЛОЖЕНИЕ ---");
+                    double a = GetNumber("Введите первое число: ");
+                    double b = GetNumber("Введите второе число: ");
+                    double result = a + b;
+                    Console.WriteLine($"Результат: {a} + {b} = {result}");
+                }
+                static void Subtraction(){
+                    Console.WriteLine("\n--- ВЫЧИТАНИЕ ---");
+                    double a = GetNumber("Введите первое число: ");
+                    double b = GetNumber("Введите второе число: ");
+                    double result = a - b;
+                    Console.WriteLine($"Результат: {a} - {b} = {result}");
+                }
+                static void Multiplication(){
+                    Console.WriteLine("\n--- УМНОЖЕНИЕ ---");
+                    double a = GetNumber("Введите первое число: ");
+                    double b = GetNumber("Введите второе число: ");
+                    double result = a * b;
+                    Console.WriteLine($"Результат: {a} * {b} = {result}");
+                }
+                static void Division(){
+                    Console.WriteLine("\n--- ДЕЛЕНИЕ ---");
+                    double a = GetNumber("Введите делимое: ");
+                    double b;
+                    do{
+                        b = GetNumber("Введите делитель: ");
+                        if (b == 0)
+                            Console.WriteLine("Ошибка: деление на ноль! Введите другое число.");
+                    } while (b == 0);
+                    double result = a / b;
+                    Console.WriteLine($"Результат: {a} / {b} = {result}");
+                }
+                static double GetNumber(string prom){
+                    Console.Write(prom);
+                    return Convert.ToDouble(Console.ReadLine());
+                }
             }
-            int[] numbers = { 1, 2, 3, 4, 5 };
-            int[] reversed = ReverseArray(numbers);
-            Console.WriteLine(string.Join(", ", reversed));
-
 
         }
     }
