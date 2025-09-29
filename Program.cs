@@ -180,10 +180,26 @@
             //}
             //Console.WriteLine(AddNumbers(5, 8));
             //Задание 4
-            bool isEven(int n){
-                return n % 2 == 0;
+            //bool isEven(int n){
+            //    return n % 2 == 0;
+            //}
+            //Console.WriteLine(isEven(11));
+            //Заданиме 5
+            //Task 5
+            int findMax(int[] m)
+            {
+                int max = 0;
+                for (int i = 0; i < m.Length; i++)
+                {
+                    if (m[i] > max)
+                        max = m[i];
+                }
+                return max;
             }
-            Console.WriteLine(isEven(11));
+
+            int[] m = { 1111, 2231, 333, 234, 555, 236, 777 };
+            Console.WriteLine(findMax(m));
+
 
         }
     }
