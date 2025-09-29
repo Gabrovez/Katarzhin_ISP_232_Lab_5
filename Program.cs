@@ -222,15 +222,24 @@
             //int vowelCount = CountVowels(text);
             //Console.WriteLine($"Кoл-вo гласных: {vowelCount}");
             //Task 8
-            string GeneratePassword(int length){
-                string chars = "0123456789abcdefghijklamopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                Random random = new Random();
-                char[] password = new char[length];
-                for (int i = 0; i < length; i++)
-                    password[i] = chars[random.Next(chars.Length)];
-                return new string(password);
+            //string GeneratePassword(int length){
+            //    string chars = "0123456789abcdefghijklamopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            //    Random random = new Random();
+            //    char[] password = new char[length];
+            //    for (int i = 0; i < length; i++)
+            //        password[i] = chars[random.Next(chars.Length)];
+            //    return new string(password);
+            //}
+            //Console.WriteLine($"Пароль: {GeneratePassword(22)}");
+            // Task 9
+            bool IsPalindrome(string word){
+                for (int i = 0; i < word.Length; i++){
+                    if (word[i] != word[word.Length - 1 - i])
+                        return false;
+                }
+                return true;
             }
-            Console.WriteLine($"Пароль: {GeneratePassword(22)}");
+            Console.WriteLine(IsPalindrome("абоба"));
 
 
 
